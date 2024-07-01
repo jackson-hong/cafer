@@ -44,18 +44,3 @@ Cafer는 사용자의 위치를 기반으로 적절한 카페를 추천하는 �
 - **컨테이너 오케스트레이션**: AWS EKS
 - **CI/CD**: Jenkins, AWS CodeBuild, Helm Charts
 
-## 시작하기
-
-### 요구 사항
-
-- Java 17 이상
-- Gradle
-- Docker
-
-### 설치 및 실행
-
-1. **프로젝트 클론**
-
-   ```bash
-   git clone https://github.com/your-repo/cafer.git
-   cd cafer
