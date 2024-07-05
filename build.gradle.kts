@@ -23,9 +23,11 @@ extra["netflixDgsVersion"] = "9.0.0"
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("com.netflix.graphql.dgs:graphql-dgs-spring-graphql-starter")
+    implementation("org.projectlombok:lombok:1.18.28")
     developmentOnly("org.springframework.boot:spring-boot-devtools")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+    annotationProcessor("org.projectlombok:lombok:1.18.28")
 }
 
 dependencyManagement {

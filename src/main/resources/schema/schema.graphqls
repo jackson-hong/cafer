@@ -1,0 +1,13 @@
+type Query {
+    cafes: [Cafe]
+    cafe(id: ID!): Cafe
+}
+
+
+type Cafe {
+    id: ID
+    name: String
+    location: String
+    description: String
+}
+
