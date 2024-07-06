@@ -1,18 +1,18 @@
-package com.spring.cafer.domain.cafe.fetcher;
+package com.spring.cafer.domain.cafe.controller;
 
-import com.netflix.graphql.dgs.DgsComponent;
-import com.netflix.graphql.dgs.DgsQuery;
+import org.springframework.graphql.data.method.annotation.QueryMapping;
+import org.springframework.stereotype.Controller;
 
 import java.util.List;
 
-@DgsComponent
-public class CafeFetcher {
+@Controller
+public class CafeController {
 
     private final List<Cafe> cafes = List.of(
             new Cafe("1", "jackson", "blah", "songpa")
     );
 
-    @DgsQuery
+    @QueryMapping
     public List<Cafe> cafes() {
         return cafes;
     }

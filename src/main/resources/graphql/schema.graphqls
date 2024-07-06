@@ -3,7 +3,6 @@ type Query {
     cafe(id: ID!): Cafe
 }
 
-
 type Cafe {
     id: ID
     name: String
