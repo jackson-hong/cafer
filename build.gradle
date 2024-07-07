@@ -24,6 +24,11 @@ dependencyManagement {
     }
 }
 
+generateJava{
+    schemaPaths = ["${projectDir}/src/main/resources/schema"] // List of directories containing schema files
+    packageName = 'com.spring.cafer' // The package name to use to generate sources
+    generateClient = true // Enable generating the type safe query API
+}
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'com.netflix.graphql.dgs:graphql-dgs-spring-graphql-starter'
