@@ -1,4 +1,4 @@
-package com.spring.cafer.domain.cafe.controller;
+package com.spring.cafer.domain.cafe.fetcher;
 
 import com.netflix.graphql.dgs.DgsComponent;
 import com.netflix.graphql.dgs.DgsQuery;

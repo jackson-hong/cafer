@@ -24,14 +24,20 @@ dependencyManagement {
     }
 }
 
+// Controller Test 코드 작성시 Client 측 Request Builder를 위한 프로세싱
 generateJava{
     schemaPaths = ["${projectDir}/src/main/resources/schema"] // List of directories containing schema files
     packageName = 'com.spring.cafer' // The package name to use to generate sources
     generateClient = true // Enable generating the type safe query API
 }
+
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'com.netflix.graphql.dgs:graphql-dgs-spring-graphql-starter'
+    implementation 'org.slf4j:slf4j-api:1.7.36'
+    implementation 'org.slf4j:slf4j-simple:1.7.36'
+    implementation 'org.projectlombok:lombok:1.18.24'
+    annotationProcessor 'org.projectlombok:lombok:1.18.24'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
