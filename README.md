@@ -40,9 +40,12 @@ Cafer는 사용자의 위치를 기반으로 적절한 카페를 추천하는 �
   - 하나의 IP로 크롤링할 경우 네이버에서 막기 때문에 AWS Lambda를 통해 수집
   - API는 트리거 역할
   - 수집한 데이터를 AI 학습 후 태그 생성하여 DB에 업데이트 (세부정보, 메뉴, 리뷰 기반)
-- **ElasticSearch**: AWS OpenSearch
-- **컨테이너 오케스트레이션**: AWS EKS
-- **CI/CD**: Jenkins, AWS CodeBuild, Helm Charts
+- ~~**ElasticSearch**: AWS OpenSearch~~ (비용 이슈)
+- ~~**컨테이너 오케스트레이션**: AWS EKS~~ (비용 이슈)
+- ~~**CI/CD**: Jenkins, AWS CodeBuild, Helm Charts~~ (비용 이슈)
+- **RDS** : MySQL
+- **컨테이너 오케스트레이션**: Docker Compose
+- **CI/CD**: GitHub Actions
 
 ## 7/11
 
