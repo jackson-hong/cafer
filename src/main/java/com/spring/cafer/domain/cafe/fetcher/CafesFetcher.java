@@ -8,15 +8,15 @@ import java.util.List;
 @DgsComponent
 public class CafesFetcher {
 
-    private final List<Cafe> cafes = List.of(
-            new Cafe("1", "jackson", "blah", "songpa")
+    private final List<CafeDto> cafeDtos = List.of(
+            new CafeDto("1", "jackson", "blah", "songpa")
     );
 
     @DgsQuery
-    public List<Cafe> cafes() {
-        return cafes;
+    public List<CafeDto> cafes() {
+        return cafeDtos;
     }
 }
 
-record Cafe(String id, String name, String description, String location) {
+record CafeDto(String id, String name, String description, String location) {
 }
